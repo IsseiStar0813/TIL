@@ -1,0 +1,1 @@
+request.original_url リクエスト先のurlを取得
