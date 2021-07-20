@@ -16,4 +16,5 @@
 
 原因　form_withは自動的に複数形のpathを生成するので、pathが単数形の場合エラーが起きる
 
-対策　urlを指定する　　参考https://qiita.com/annaaida/items/ae38de82526bf5b4aa73
+対策　urlを指定する　　予めpathは複数形になるようにしておく.
+参考 https://qiita.com/annaaida/items/ae38de82526bf5b4aa73
