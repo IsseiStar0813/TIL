@@ -1,13 +1,13 @@
 # formを作成するメソッド
 * データベースに保存しない場合
 ```
-<%= form_with url: "パス" do |f| %>
+<%= form_with (url: "パス" #場合によってscope,localの指定)　do |f| %>
   フォーム内容
 <% end %>
 ```
 * データベースに保存する場合
 ```
-<%= form_with model: モデルクラスのインスタンス #場合によってlocal:　# do |f| %>
+<%= form_with (model: モデルクラスのインスタンス #場合によってlocal,scopeの指定)　 do |f| )%>
   フォーム内容
 <% end %>
 ```
