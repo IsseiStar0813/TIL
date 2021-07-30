@@ -23,6 +23,7 @@
 ```
 * newメソッドで作成した,空のインスタンスを渡した場合、自動的に同じコントローラのcreate アクションに送られる。
 * undefinedmethod error　*** path が、ルーティングは合っているのに出た場合
+* local: trueがない場合、RailsではAjaxによる送信という意味になる。普通にHTMLとしてフォームを送信する場合にlocal: trueが必要になる
 
 原因　form_withは自動的に複数形のpathを生成するので、pathが単数形の場合エラーが起きる
 
