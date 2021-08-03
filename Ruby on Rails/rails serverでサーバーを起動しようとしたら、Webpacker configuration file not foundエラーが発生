@@ -1,0 +1,4 @@
+webpackerをインストール
+webpackerのインストールには、Node.jsとYarnのインストールが必要で、これらをインストールした上でwebpackerをインストールすると解決
+
+参考　https://qiita.com/yokota02210301/items/46f44af5787a1a492bd4
