@@ -1,5 +1,12 @@
-* セキュアにハッシュ化したパスワード(暗号化された)を、データベース内のpassword_digestという属性に保存できるようになる。
-* 2つのペアの仮想的な属性（passwordとpassword_confirmation）が使えるようになる。また、存在性と値が一致するかどうかのバリデーションも追加される。
-*	authenticateメソッドが使えるようになる（引数の文字列が正しいパスワードと一致するとそのオブジェクトとtrueを、間違っているとfalseを返すメソッド）。
-*	password_digest がモデル内に含まれている必要がある。
-*	bcrypt と併用する。
+セキュアにハッシュ化したパスワード(暗号化された)を、データベース内のpassword_digestという属性に保存できるようになる。
+ 
+2つのペアの仮想的な属性（passwordとpassword_confirmation）が使えるようになる。また、存在性と値が一致するかどうかのバリデーションも追加される。
+
+authenticateメソッドが使えるようになる（引数の文字列が正しいパスワードと一致するとそのオブジェクトとtrueを、間違っているとfalseを返すメソッド）。
+
+password_digest がモデル内に含まれている必要がある。
+
+bcrypt と併用する。
+
+ユーザー作成時に、passwordと、psssword_confirmationが正しいのに作成できない不具合
+* ユーザー作成用の　createアクションで受け取るparamsに、password_confirmationを許可していなかったことが原因
