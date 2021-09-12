@@ -1,6 +1,6 @@
 処理を定期的に自動で実行させる
 
-config/schedule.rbに処理を記述
+wheneveriseとコマンドを打ち、作成された、config/schedule.rbに処理を記述
 
 ```
 
