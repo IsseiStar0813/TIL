@@ -13,3 +13,7 @@ month_calender メソッド　月間カレンダーを作成(week_calenderにす
   <%= date %>
 <% end %>
 ```
+
+見た目を編集 
+
+rails g simple_calendar:views で viewファイルが作成される
