@@ -2,7 +2,7 @@ datetime 属性を持つ start_time　カラムを持つモデルを用意
 
 month_calender メソッド　月間カレンダーを作成(week_calenderにすると、週間カレンダー)
 ```
-<%= month_calendar do |date| %>
+<%= month_calendar @events do |date| %>
   <%= date %>
 <% end %>
 ```
@@ -10,7 +10,7 @@ month_calender メソッド　月間カレンダーを作成(week_calenderにす
 第二引数を渡して、日付け以外の要素を表示することもできる
 
 ```
-<%= month_calender  do |date,event|
+<%= month_calender  @events do |date,event|
    <%= date %>
     
    <%= event.title %>
