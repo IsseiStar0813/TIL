@@ -14,8 +14,9 @@ month_calender メソッド　月間カレンダーを作成(week_calenderにす
    <%= date %>
     
    <%= event.title %>
-
-表示日数をカスタム
+<% end %>
+```
+表示日数をカスタム（この場合4日)
 ```
 <%= calendar(number_of_days: 4) do |date| %>
   <%= date %>
