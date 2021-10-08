@@ -7,6 +7,14 @@ month_calender メソッド　月間カレンダーを作成(week_calenderにす
 <% end %>
 ```
 
+第二引数を渡して、日付け以外の要素を表示することもできる
+
+```
+<%= month_calender  do |date,event|
+   <%= date %>
+    
+   <%= event.title %>
+
 表示日数をカスタム
 ```
 <%= calendar(number_of_days: 4) do |date| %>
