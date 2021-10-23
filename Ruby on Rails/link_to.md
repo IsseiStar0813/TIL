@@ -13,3 +13,10 @@ show, update, destroyアクションの場合はオブジェクト名だけで�
 ・
 ・
 ```
+
+文字列以外のタグなど（以下の例ではボタン)にリンクを付与したい場合 
+
+```
+<%= link_to user_path do %>
+  <button>ボタン<\button>
+<% end %>
