@@ -37,4 +37,4 @@ local: trueがない場合、RailsではAjaxによる送信という意味にな
 
 原因 formがdivをまたいでしまうと、turbolinksがうまく動作しなくなる
 
-対策　一つのformごとにdivで囲み、formがdivをまたがないようにする 参考　[Rails]リロードしないと投稿できないちょっとした不具合 - Qiitahttps://qiita.com › Ruby
+対策　一つのformごとにdivで囲み、formがdivをまたがないようにする 参考　https://qiita.com/taro03/items/4973c1c14798c1601d6e
