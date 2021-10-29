@@ -38,3 +38,7 @@ local: trueがない場合、RailsではAjaxによる送信という意味にな
 原因 formがdivをまたいでしまうと、turbolinksがうまく動作しなくなる
 
 対策　一つのformごとにdivで囲み、formがdivをまたがないようにする 参考　https://qiita.com/taro03/items/4973c1c14798c1601d6e
+
+## オプション
+
+:placeholder =>　"値"　でplaceholder 設定
