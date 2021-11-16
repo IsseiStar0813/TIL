@@ -6,3 +6,5 @@
 - UPDATE データの更新を行う　UPDATE テーブル名 SET 更新処理内容;
 - DELETE データの削除を行う　DELETE FROM テーブル名;
 - WHERE 条件を追加する　
+
+CREATE DATABASE でハイフンは使えない
