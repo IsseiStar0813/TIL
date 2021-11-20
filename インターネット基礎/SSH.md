@@ -24,3 +24,5 @@ IdentityFile 鍵へのPATH(例えば~/.ssh/hoge.key)
 ```
 
 のように設定しておくと、ssh hogeと記述するだけで接続できる
+
+vi ~/.ssh/config で編集
