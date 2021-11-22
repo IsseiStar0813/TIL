@@ -16,11 +16,16 @@
 ssh接続の際に利用される設定ファイル
 
 ```
+# サーバーへ定期的(今回は60秒毎)に生きている報告をする(全体的に記述を有効にする場合は先頭辺りに書いておくといい)
+ServerAliveInterval 60
+
+# 個別に有効にしたい場合は、個別の設定に行を開けないで追記しておくといい
 Host 任意の接続名(hoge)
-HostName ホスト名
-User ユーザー名
-Port ポート番号
-IdentityFile 鍵へのPATH(例えば~/.ssh/hoge.key)
+    HostName ホスト名
+    User ユーザー名
+    Port ポート番号
+    IdentityFile 鍵へのPATH(例えば~/.ssh/hoge.key)
+    ServerAliveInterval 60
 ```
 
 のように設定しておくと、ssh hogeと記述するだけで接続できる
