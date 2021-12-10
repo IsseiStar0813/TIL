@@ -1,0 +1,8 @@
+Dockerの常駐型プログラムで、Dockerコンテナの作成やDockerイメージの作成などDockerに対する操作はこのDockerデーモンが受け取り、実際の処理を行う
+
+Docker DesktopやDocker ToolboxといったソフトをインストールすることでDockerデーモンが起動
+
+Dockerデーモンが起動していないとDockerに対する操作を受け取れないためエラーになる
+
+
+
