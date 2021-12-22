@@ -1,0 +1,8 @@
+- eq( 値 )	expect(1 + 2).to eq 3 1+2 は 3 と等しいこと
+- include( 値 )	expect([1,2,3]).to include 2	[1,2,3]の配列に2が含まれること
+- be_truthy	expect(true).to be_truthy	実行結果がtrueであること
+- be_false	expect(false).to be_false	実行結果がfalseであること
+- match(正規表現)	expect("abc").to match /c$/	“abc”は”c”で終わること
+- be_valid	expect(user).to be_valid	RailsのUserモデルのvalidationに成功すること
+- redirect_to(url)	expect(response).to redirect_to(“http://example.com”)	Railsのコントローラは“http://example.com”にリダイレクトすること
+- render_template(url)	expect(response).to render_template(“new”)	Railsのコントローラはnewレンプレートをレンダリングすること
